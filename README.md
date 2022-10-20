@@ -1,2 +1,3 @@
 # webscraper_js
-Webscraper basic project using node js
+
+Built a web scraper in node js using axios, cheerio, and express.
