@@ -7,13 +7,11 @@ const PORT = 5050;
 
 const app = express();
 
-// const urlMma = 'https://www.sherdog.com/';
-// const urlMma = 'https://www.kimura.se/';
 const urlMma = 'https://www.mmanytt.se/';
 
 axios(urlMma)
   .then((response) => {
-    const html = response.data; // get the html data with axios
+    const html = response.data; // get the html as data with axios
     const $ = cheerio.load(html);
 
     const articles = [];
